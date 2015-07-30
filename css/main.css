@@ -96,9 +96,7 @@ textarea {
    ========================================================================== */
 
 body {
-  background-image: url("../img/webdev-notebook-image-02.png");
-  background-position: center;
-  background-repeat: repeat;
+  background-color: blue;
 }
 
 /***************************************************************
@@ -107,7 +105,6 @@ HEADER
 
 header {
   background-color: #00CC00;
-  font-family: Georgia, sans-serif;
   left: 0;
   margin: 0;
   padding-left: 1.5rem;
@@ -134,12 +131,14 @@ header {
   }
 
   .navigation {
+    font-family: "Open Sans", sans-serif;
+    /*font-family: fantasy;*/
+    font-size: 0.6rem;
+    font-weight: normal;
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-family: fantasy;
+    text-transform: uppercase;
   }
 
   .navigation li {
@@ -148,7 +147,6 @@ header {
     /*border-right: 1px solid grey;*/
     /*border-top: 1px solid grey;*/
     display: inline-block;
-    font-size: 1.8rem;
     padding: 0.8rem 0.5rem;
   }
 
@@ -169,7 +167,7 @@ header {
   }
 
   .navigation a:hover {
-    color: black;
+    color: black; /* #93ba54 */
   }
 
 /***************************************************************
@@ -177,97 +175,179 @@ MAIN CONTENT
 ***************************************************************/
 
 .content {
-  font-family: sans-serif;
-  margin: 6rem 0 3rem;
+  margin: 8rem 0 3rem;
+  /*margin: 6rem 0 3rem;*/
   /*padding-top: 2rem;*/
-}
-
-article h3{
-  text-align: center;
-}
-
-h2{
-  font-size: 2rem;
-}
-
-.gallery img {
-  width: 100%;
-  height: 80%;
-}
-
-.pitch {
-  color: white;
 }
 
 section:before {
   content: "";
   display: block;
   height: 8rem;
-  margin-top: -6rem;
+  margin-top: -8rem;
+  /*margin-top: -6rem;*/
   visibility: hidden;
 }
 
 section {
+  background-color: white;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-#services-section h2{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.services-headline{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-
-#benefits-section h2{
-  text-align: center;
-  padding: 0;
-}
-.benefits-image img{
-  width:100%;
-  height:40;
-}
-
-#contact-section h2{
-  text-align: center;
-  padding: 0;
-}
-
-#appointments-section h2{
-  text-align: center;
-  padding: 0;
-}
-
 section h2 {
-  color: white;
+  /*color: white;*/
+  font-size: 2rem;
 }
-.services-aligner{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+#gallery-section {
+  padding: 0;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.pitch {
+  color: #888893;
+}
+
+/*#services-section {
+  background-color: white;
+}*/
+
+#services-section article {
+  background-color: white;
+}
+
+/*#services-section h3 {
+  color: #94bb54;
+}*/
+
+/*.services-flex p {
+  color: #888893;
+}*/
+
+#services-section article h3 {
+  text-align: center;
+}
+
+.service-icon {
+  text-align: center;
+}
+
+#benefits-section article {
+  background-color: white;
+}
+
+.feedback-survey {
+  background-color: white;
+  flex: 0 1 25rem;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.location-info {
+  background-color: white;
+  font-size: 0.95rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.google-map {
+  background-color: white;
+  flex: 0 1 20rem;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.fa-home {
+  color: #7c9a4b;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.contact {
+  color: grey;
+  font-size: 1.25;
+  font-family: sans-serif;
+  padding-left: 1rem;
+}
+
+.contact1 {
+  color: grey;
+  font-size: 1.25;
+  font-family: sans-serif;
+  padding-left: 1.9rem;
+}
+
+.fa-phone {
+  color: #7c9a4b;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.fa-envelope {
+  color: #7c9a4b;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.fa-clock-o {
+  color: #7c9a4b;
+  font-size: 1rem;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+/*#appointments-section h2 {
+  text-align: center;
+  padding: 0;
+}*/
+
+.headline {
+  /*align-items: center;*/
+  background-color: #93ba54;
+  border: 1px solid #93ba54;
+  color: white;
+  /*display: flex;*/
+  font-family: Oswald, sans-serif;
+  /*justify-content: center;*/
+  margin-bottom: 1.5rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  text-align: center;
+}
+
+.headline h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 .flexContainer {
-  align-content: stretch; /* default*/
-  align-items: stretch; /* default*/
+  align-content: stretch;
+  align-items: stretch;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start space-around;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  justify-content: space-around;
 }
 
 article {
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 3px;
+  background-color: pink;
+  /*border: 1px solid grey;*/
+  /*border-radius: 3px;*/
   flex: 0 1 20rem;
   margin: 0 0 2rem 0;
   padding: 1rem 2rem;
 }
 
+article h3 {
+  color: #94bb54;
+}
+
+article p, article ul {
+  color: #888893;
+}
 
 /***************************************************************
 FOOTER
@@ -288,7 +368,7 @@ FOOTER
   color: white;
   display: flex;
   flex-flow: row nowrap; /* default */
-  font-family: Veranda, serif;
+  font-family: Veranda, sans-serif;
   justify-content: center;
   margin-bottom: 0.5rem;
   margin-top: 0;
@@ -374,25 +454,34 @@ FOOTER
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 50rem) {
   #logo-container {
     display: inline-block;
   }
 
   nav {
     float: right;
-    margin-top: 1.15rem;
+    margin-top: 0.75rem;
     width: auto;
+  }
+
+  .navigation {
+    font-size: 1rem;
   }
 
   .content {
     clear: both;
-    margin-top: 3.75rem;
+    margin-top: 3.5rem;
+    /*margin-top: 3.75rem;*/
   }
 
   section:before {
-    height: 5.75rem;
+    height: 5.45rem;
     margin-top: -3.75rem;
+  }
+
+  .headline h2 {
+    font-size: 3rem;
   }
   /* Style adjustments for viewports that meet the condition */
 }
