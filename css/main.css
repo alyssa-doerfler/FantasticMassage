@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 body {
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 /***************************************************************
@@ -104,7 +104,8 @@ HEADER
 ***************************************************************/
 
 header {
-  background-color: #00CC00;
+  /*background-color: #00CC00;*/
+  background-image: url("../img/background.png");
   left: 0;
   margin: 0;
   padding-left: 1.5rem;
@@ -112,10 +113,12 @@ header {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 1;
 }
 
 #logo {
   display: block;
+  height: 3.65rem;
   margin: 0.75rem auto;
 }
 
@@ -241,6 +244,9 @@ section h2 {
 }
 
 .feedback-survey {
+  z-index: 0;
+  visibility: hidden;
+
   background-color: white;
   flex: 0 1 25rem;
   margin: 0 0 2rem 0;
@@ -353,7 +359,12 @@ article p, article ul {
 FOOTER
 ***************************************************************/
 
+footer {
+  background-image: url("../img/background.png");
+}
+
 .social-media {
+  padding-top: 1.5rem;
   text-align: center;
 }
 
@@ -370,7 +381,7 @@ FOOTER
   flex-flow: row nowrap; /* default */
   font-family: Veranda, sans-serif;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  /*margin-bottom: 0.5rem;*/
   margin-top: 0;
 }
 
@@ -482,6 +493,10 @@ FOOTER
 
   .headline h2 {
     font-size: 3rem;
+  }
+
+  .feedback-survey {
+    visibility: visible;
   }
   /* Style adjustments for viewports that meet the condition */
 }
