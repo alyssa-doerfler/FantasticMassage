@@ -189,7 +189,6 @@ section:before {
   height: 8rem;
   margin-top: -8rem;
   /*margin-top: -6rem;*/
-  visibility: hidden;
 }
 
 section {
@@ -244,13 +243,12 @@ section h2 {
 }
 
 .feedback-survey {
-  z-index: 0;
-  visibility: hidden;
-
   background-color: white;
+  display: none;
   flex: 0 1 25rem;
   margin: 0 0 2rem 0;
   padding: 0;
+  z-index: 0;
 }
 
 .location-info {
@@ -496,7 +494,8 @@ footer {
   }
 
   .feedback-survey {
-    visibility: visible;
+    display: block;
+    visibility: visible
   }
   /* Style adjustments for viewports that meet the condition */
 }
